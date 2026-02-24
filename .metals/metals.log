@@ -983,3 +983,101 @@ WARNING: Unmatched cancel notification for request id 1571
 2026.02.24 11:48:51 INFO  Memory monitor stopped
 2026.02.24 11:48:51 INFO  shutting down Metals
 2026.02.24 11:48:51 INFO  Exiting server
+2026.02.24 12:16:57 INFO  Started: Metals version 1.6.5 in folders 'C:\Users\aleja\OneDrive\Desktop\stockgateway\stockgateway' for client Visual Studio Code 1.109.5.
+2026.02.24 12:16:57 INFO  Memory monitor started
+2026.02.24 12:16:57 WARN  Using H2 2.4.240 which is newer than the version Flyway has been verified with. The latest verified version of H2 is 2.3.232.
+2026.02.24 12:16:57 INFO  no build target found for C:\Users\aleja\OneDrive\Desktop\stockgateway\stockgateway\src\client\concurrentClient.java. Using fallback presentation compiler.
+feb 24, 2026 12:16:58 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2
+2026.02.24 12:16:59 INFO  no build target found for C:\Users\aleja\OneDrive\Desktop\stockgateway\stockgateway\src\client\concurrentClient.java. Using fallback presentation compiler.
+2026.02.24 12:16:59 INFO  no build target found for C:\Users\aleja\OneDrive\Desktop\stockgateway\stockgateway\src\client\concurrentClient.java. Using fallback presentation compiler.
+2026.02.24 12:16:59 INFO  no build target found for C:\Users\aleja\OneDrive\Desktop\stockgateway\stockgateway\src\client\concurrentClient.java. Using fallback presentation compiler.
+feb 24, 2026 12:17:01 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 9
+2026.02.24 12:17:01 INFO  no build target found for c:\Users\aleja\OneDrive\Desktop\stockgateway\stockgateway\src\client\concurrentClient.java. Using fallback presentation compiler.
+feb 24, 2026 12:17:01 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleNotification
+WARNING: Notification threw an exception: {
+  "jsonrpc": "2.0",
+  "method": "textDocument/didSave",
+  "params": {
+    "textDocument": {
+      "uri": "file:///c%3A/Users/aleja/OneDrive/Desktop/stockgateway/stockgateway/src/client/concurrentClient.java"
+    }
+  }
+}
+java.lang.IllegalStateException: An unexpected exception occurred while executing jsonrpc method public abstract java.util.concurrent.CompletableFuture scala.meta.metals.lsp.TextDocumentService.didSave(org.eclipse.lsp4j.DidSaveTextDocumentParams)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$recursiveFindRpcMethods$0(GenericEndpoint.java:73)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:160)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:231)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:198)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.nio.file.NoSuchFileException: c:\Users\aleja\OneDrive\Desktop\stockgateway\stockgateway\src\client\concurrentClient.java
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:85)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:234)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:379)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:431)
+	at java.base/java.nio.file.Files.readAllBytes(Files.java:3268)
+	at scala.meta.internal.io.PlatformFileIO$.slurp(PlatformFileIO.scala:38)
+	at scala.meta.internal.io.FileIO$.slurp(FileIO.scala:18)
+	at scala.meta.internal.metals.MetalsLspService.$anonfun$onChange$1(MetalsLspService.scala:930)
+	at scala.collection.immutable.List.map(List.scala:236)
+	at scala.collection.immutable.List.map(List.scala:79)
+	at scala.meta.internal.metals.MetalsLspService.onChange(MetalsLspService.scala:929)
+	at scala.meta.internal.metals.ProjectMetalsLspService.onChange(ProjectMetalsLspService.scala:331)
+	at scala.meta.internal.metals.MetalsLspService.didSave(MetalsLspService.scala:882)
+	at scala.meta.internal.metals.ProjectMetalsLspService.didSave(ProjectMetalsLspService.scala:320)
+	at scala.meta.internal.metals.WorkspaceLspService.didSave(WorkspaceLspService.scala:506)
+	at scala.meta.metals.lsp.DelegatingScalaService.didSave(DelegatingScalaService.scala:53)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$recursiveFindRpcMethods$0(GenericEndpoint.java:65)
+	... 11 more
+
+feb 24, 2026 12:17:01 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 11
+feb 24, 2026 12:17:01 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 12
+feb 24, 2026 12:17:01 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 13
+2026.02.24 12:17:01 INFO  no build target found for C:\Users\aleja\OneDrive\Desktop\stockgateway\stockgateway\src\client\APIServiceClient.java. Using fallback presentation compiler.
+2026.02.24 12:17:01 INFO  no build target found for c:\Users\aleja\OneDrive\Desktop\stockgateway\stockgateway\src\client\concurrentClient.java. Using fallback presentation compiler.
+feb 24, 2026 12:17:01 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 15
+2026.02.24 12:17:01 INFO  no build target found for C:\Users\aleja\OneDrive\Desktop\stockgateway\stockgateway\src\client\APIServiceClient.java. Using fallback presentation compiler.
+feb 24, 2026 12:17:01 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 18
+2026.02.24 12:17:01 INFO  no build target found for C:\Users\aleja\OneDrive\Desktop\stockgateway\stockgateway\src\client\APIServiceClient.java. Using fallback presentation compiler.
+2026.02.24 12:17:02 INFO  no build target found for C:\Users\aleja\OneDrive\Desktop\stockgateway\stockgateway\src\client\APIServiceClient.java. Using fallback presentation compiler.
+2026.02.24 12:17:02 INFO  no build target found for C:\Users\aleja\OneDrive\Desktop\stockgateway\stockgateway\src\client\APIServiceClient.java. Using fallback presentation compiler.
+2026.02.24 12:17:04 INFO  no build target found for c:\Users\aleja\OneDrive\Desktop\stockgateway\stockgateway\src\client\APIServiceClient.java. Using fallback presentation compiler.
+2026.02.24 12:17:04 INFO  no build target found for C:\Users\aleja\OneDrive\Desktop\stockgateway\stockgateway\src\client\concurrentClient.java. Using fallback presentation compiler.
+2026.02.24 12:17:05 INFO  no build target found for C:\Users\aleja\OneDrive\Desktop\stockgateway\stockgateway\src\client\concurrentClient.java. Using fallback presentation compiler.
+2026.02.24 12:17:04 INFO  no build target found for C:\Users\aleja\OneDrive\Desktop\stockgateway\stockgateway\src\client\concurrentClient.java. Using fallback presentation compiler.
+2026.02.24 12:17:04 INFO  no build target found for C:\Users\aleja\OneDrive\Desktop\stockgateway\stockgateway\src\client\concurrentClient.java. Using fallback presentation compiler.
+2026.02.24 12:17:04 INFO  no build target found for C:\Users\aleja\OneDrive\Desktop\stockgateway\stockgateway\src\client\concurrentClient.java. Using fallback presentation compiler.
+2026.02.24 12:17:04 INFO  no build target found for C:\Users\aleja\OneDrive\Desktop\stockgateway\stockgateway\src\client\concurrentClient.java. Using fallback presentation compiler.
+2026.02.24 12:17:05 INFO  Created report: Optional[file:///C:/Users/aleja/OneDrive/Desktop/stockgateway/stockgateway/src/client/concurrentClient.java]
+2026.02.24 12:17:05 INFO  empty definition using pc, found symbol in pc: java/net/http/HttpResponse#BodyHandlers# (full report at: "C:\Users\aleja\OneDrive\Desktop\stockgateway\stockgateway\.metals\.reports\metals-full\2026-02-24\r_empty-definition_12-17-05-658.md")
+2026.02.24 12:17:05 INFO  no build target found for C:\Users\aleja\OneDrive\Desktop\stockgateway\stockgateway\src\client\concurrentClient.java. Using fallback presentation compiler.
+2026.02.24 12:17:05 INFO  no build target found for C:\Users\aleja\OneDrive\Desktop\stockgateway\stockgateway\src\client\concurrentClient.java. Using fallback presentation compiler.
+2026.02.24 12:17:05 INFO  no build target found for C:\Users\aleja\OneDrive\Desktop\stockgateway\stockgateway\src\client\concurrentClient.java. Using fallback presentation compiler.
+2026.02.24 12:17:13 INFO  no build target found for C:\Users\aleja\OneDrive\Desktop\stockgateway\stockgateway\src\client\concurrentClient.java. Using fallback presentation compiler.
+2026.02.24 12:17:13 INFO  no build target found for C:\Users\aleja\OneDrive\Desktop\stockgateway\stockgateway\src\client\concurrentClient.java. Using fallback presentation compiler.
+2026.02.24 12:17:13 INFO  no build target found for C:\Users\aleja\OneDrive\Desktop\stockgateway\stockgateway\src\client\concurrentClient.java. Using fallback presentation compiler.
+2026.02.24 12:17:14 WARN  no build target for: C:\Users\aleja\OneDrive\Desktop\stockgateway\stockgateway\src\client\concurrentClient.java
+2026.02.24 12:17:13 INFO  no build target found for c:\Users\aleja\OneDrive\Desktop\stockgateway\stockgateway\src\client\concurrentClient.java. Using fallback presentation compiler.
+2026.02.24 12:17:13 INFO  no build target found for C:\Users\aleja\OneDrive\Desktop\stockgateway\stockgateway\src\client\APIServiceClient.java. Using fallback presentation compiler.
+2026.02.24 12:17:13 INFO  no build target found for C:\Users\aleja\OneDrive\Desktop\stockgateway\stockgateway\src\client\APIServiceClient.java. Using fallback presentation compiler.
+2026.02.24 12:17:15 INFO  no build target found for C:\Users\aleja\OneDrive\Desktop\stockgateway\stockgateway\src\client\APIServiceClient.java. Using fallback presentation compiler.
+2026.02.24 12:55:57 INFO  no build target found for C:\Users\aleja\OneDrive\Desktop\stockgateway\stockgateway\src\client\APIServiceClient.java. Using fallback presentation compiler.
+2026.02.24 14:47:51 INFO  no build target found for C:\Users\aleja\OneDrive\Desktop\stockgateway\stockgateway\src\client\APIServiceClient.java. Using fallback presentation compiler.
+2026.02.24 14:47:51 INFO  no build target found for C:\Users\aleja\OneDrive\Desktop\stockgateway\stockgateway\src\client\APIServiceClient.java. Using fallback presentation compiler.
